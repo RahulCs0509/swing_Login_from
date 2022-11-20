@@ -92,7 +92,7 @@ public class UserLogin extends JFrame {
                 String userName = textField.getText();
                 String password = passwordField.getText();
                 try {
-                    Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/login", "root", "tiger@1450");
+                    Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/login", "root", "root");
 
                     PreparedStatement st = (PreparedStatement) connection
                         .prepareStatement("Select name, password from student where name=? and password=?");
